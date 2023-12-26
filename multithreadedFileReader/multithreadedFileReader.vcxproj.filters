@@ -1,32 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Parser">
+      <UniqueIdentifier>{14b26e21-e03b-498a-8200-1cdd4c408b4b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
+    <Filter Include="logger">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Parser">
-      <UniqueIdentifier>{14b26e21-e03b-498a-8200-1cdd4c408b4b}</UniqueIdentifier>
+    <Filter Include="parallel_file_accumulate">
+      <UniqueIdentifier>{0eac60a5-5887-4cd0-9f57-aa40c3cb8150}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="operation_deserializer">
+      <UniqueIdentifier>{c310283f-6c66-4b82-9cf9-82efafeaa3ee}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="parser.cpp">
       <Filter>Parser</Filter>
     </ClCompile>
-    <ClCompile Include="deserializer.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="operation_deserializer.cpp">
+      <Filter>operation_deserializer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="deserializer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="logger.h">
-      <Filter>Header Files</Filter>
+      <Filter>logger</Filter>
     </ClInclude>
     <ClInclude Include="parser.h">
       <Filter>Parser</Filter>
@@ -34,8 +33,14 @@
     <ClInclude Include="token.h">
       <Filter>Parser</Filter>
     </ClInclude>
+    <ClInclude Include="operation_deserializer.h">
+      <Filter>operation_deserializer</Filter>
+    </ClInclude>
     <ClInclude Include="parallel_file_accumulate.h">
-      <Filter>Header Files</Filter>
+      <Filter>parallel_file_accumulate</Filter>
+    </ClInclude>
+    <ClInclude Include="deserialize_exception.h">
+      <Filter>operation_deserializer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

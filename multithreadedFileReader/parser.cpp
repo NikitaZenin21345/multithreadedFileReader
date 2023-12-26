@@ -43,7 +43,7 @@ namespace
 }
 
 
-auto text_file_parser::get_parsed(std::ifstream& stream_, const std::string& forbidden_) -> tokens
+auto text_file_separated_by_simple_delimiters_parser::get_parsed(std::istream& stream_, const std::string& forbidden_) -> tokens
 {
-	return parse<std::ifstream, tokens>(stream_, forbidden_);
+	return parse<std::istream, tokens>(stream_, forbidden_);
 }

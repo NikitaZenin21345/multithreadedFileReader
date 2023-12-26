@@ -131,11 +131,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="deserializer.cpp" />
+    <ClCompile Include="operation_deserializer.cpp" />
     <ClCompile Include="parser.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="deserializer.h" />
+    <ClInclude Include="deserialize_exception.h" />
+    <ClInclude Include="operation_deserializer.h" />
     <ClInclude Include="logger.h" />
     <ClInclude Include="parallel_file_accumulate.h" />
     <ClInclude Include="parser.h" />

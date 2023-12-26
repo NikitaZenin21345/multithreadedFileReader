@@ -1,18 +1,16 @@
 #include <thread>
-#include <numeric>
-#include <functional>
 #include <filesystem>
-#include <iostream>
-#include <iterator>
-#include "parallel_file_accumulate.h"
+#include "parallel_accumulate.h"
+
 
 
 int main()
 {
-	const std::string folder_name = "C:\\Users\\nikze\\Desktop\\lists";
-	const std::string file_name_template = "\\in_";
-	const size_t length = std::distance(std::filesystem::directory_iterator(folder_name), std::filesystem::directory_iterator{});
+	std::filesystem::path executable_path = std::filesystem::current_path();
+	const std::string folder_name = executable_path.string() + "\\lists";
+	const std::string template_file_name = "\\in_";
+	const std::string logger_settings_file_name = "log_settings.txt";
 	const size_t hardware_threads = std::thread::hardware_concurrency();
-	std::cout << parallel_file_accumulate<double>(10, 1, folder_name, file_name_template, log_strategy::log);
+	execute(folder_name,template_file_name, logger_settings_file_name, hardware_threads);
 	return 0;
 }

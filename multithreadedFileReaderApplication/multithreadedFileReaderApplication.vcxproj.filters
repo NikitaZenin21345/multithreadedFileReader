@@ -10,5 +10,11 @@
     <ClCompile Include="multithreadedFileReaderApplication.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="parallel_accumulate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="parallel_accumulate.h" />
   </ItemGroup>
 </Project>

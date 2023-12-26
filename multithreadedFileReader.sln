@@ -6,8 +6,14 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "multithreadedFileReader", "multithreadedFileReader\multithreadedFileReader.vcxproj", "{5ABB148C-DFCB-4F98-A578-54A6576EC020}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "multithreadedFileReaderTests", "multithreadedFileReaderTests\multithreadedFileReaderTests.vcxproj", "{5BC956E2-C98D-429E-8BA7-4BA5C7F2D0CC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5ABB148C-DFCB-4F98-A578-54A6576EC020} = {5ABB148C-DFCB-4F98-A578-54A6576EC020}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "multithreadedFileReaderApplication", "multithreadedFileReaderApplication\multithreadedFileReaderApplication.vcxproj", "{BF85C09E-EFC0-4256-9180-AEE35B3B0998}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5ABB148C-DFCB-4F98-A578-54A6576EC020} = {5ABB148C-DFCB-4F98-A578-54A6576EC020}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
